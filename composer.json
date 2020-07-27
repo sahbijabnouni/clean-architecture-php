@@ -1,0 +1,22 @@
+{
+    
+    "require": {
+        "slim/slim": "4.*",
+        "catfan/medoo": "^1.7",
+        "php-di/slim-bridge": "^3.0",
+        "php-di/php-di": "^6.2",
+        "slim/psr7": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Api\\": "Src/Api",
+            "Core\\": "Src/Core",
+            "Infrastructure\\": "Src/Infrastructure",
+            "Persistence\\": "Src/Persistence"
+        }
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t Src Src/index.php"
+    }
+
+}
