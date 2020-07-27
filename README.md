@@ -1,2 +1,7 @@
-# clean-architecture-php
-Clean architecture PHP &amp; Slim Framework
+1- Installation
+
+Composer install
+
+2- Start
+
+Composer start
