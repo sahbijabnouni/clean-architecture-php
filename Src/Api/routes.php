@@ -3,5 +3,5 @@
 
 use Api\Controllers\UserController;
 
-$app->post('/projects', [UserController::class, 'add']);
-$app->get('/projects/{id}', [UserController::class, 'get']);
+$app->post('/users', [UserController::class, 'add']);
+$app->get('/users/{id}', [UserController::class, 'get']);

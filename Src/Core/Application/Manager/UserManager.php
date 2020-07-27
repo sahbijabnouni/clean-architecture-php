@@ -15,7 +15,7 @@ class UserManager
     {
         $this->userRepository->add($user);
     }
-    public function find(string $id):User
+    public function find(string $id):?User
     {
         return $this->userRepository->find($id);
     }

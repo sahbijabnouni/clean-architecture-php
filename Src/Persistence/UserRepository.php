@@ -24,13 +24,13 @@ class UserRepository implements UserRepositoryInterface
         ]);
     }
 
-    public function find(string $id):User
+    public function find(string $id): ?User
     {
 
         $result=$this->database->select("PROJECT_TABLE", "*", [
             "id" => $id
         ]);
-        if($result==false) return None;
+        if($result==false) return null;
         foreach($result as $item)
         {
             return new User($item['id'],$item['firstName'],$item['lastName'],$item['email']);

@@ -22,7 +22,7 @@ class UserController
         $json = $request->getBody();
 
         $obj= json_decode($json);
-        $user=new User($obj.id,$obj.firstName,$obj->lastName, $obj->email);
+        $user=new User($obj->id,$obj->firstName,$obj->lastName, $obj->email);
         $this->userManager->add($user);
         return $response->withStatus(201);
     }

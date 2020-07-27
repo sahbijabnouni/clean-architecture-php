@@ -6,5 +6,5 @@ use Core\Entities\User;
 interface UserRepositoryInterface
 {
     public function add(User $user): void;
-    public function find(string $id):User;
+    public function find(string $id):?User;
 }
